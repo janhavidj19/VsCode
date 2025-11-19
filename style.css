@@ -1,0 +1,960 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(154, 154, 154);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/***** Nav Section *****/
+.note {
+  text-align: center;
+  background-color: yellow;
+  color: rgb(93, 92, 92);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav {
+  height: 8vh;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+  z-index: 111111;
+}
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  width: 100%;
+  height: 100%;
+
+  padding: 0 9vw 0 9vw;
+  background-color: #2c2c32;
+}
+
+/***** Nav left Section *****/
+.nav-items-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: rgb(158, 156, 156);
+  list-style: none;
+
+  margin-top: 30px;
+}
+.nav-items-left:hover {
+  cursor: pointer;
+}
+.nav-item:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  flex-direction: row;
+}
+.nav-item img {
+  width: 25px;
+}
+.nav-item p {
+  font-size: 20px;
+  color: #fff;
+}
+.nav-item {
+  font-size: 15px;
+  font-weight: 500;
+}
+.nav-item:hover {
+  color: #fff;
+}
+
+/***** Nav Right Section *****/
+.nav-items-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  position: relative;
+  width: 230px;
+}
+
+#search-bar {
+  padding: 19px 0px 19px 35px;
+  background-color: #585858;
+
+  background-size: 20px;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+#search-bar:focus {
+  color: rgb(249, 248, 248);
+  font-size: 13.5px;
+  border: 1px solid rgb(170, 169, 169);
+}
+#search-bar:hover {
+  background-color: #585858;
+  border: 1px solid rgb(170, 169, 169);
+}
+::placeholder {
+  color: rgb(218, 215, 215);
+}
+.serch-icon {
+  position: absolute;
+  left: 40px;
+}
+
+.nav-button {
+  position: relative;
+  background-color: #0267ba;
+  border: none;
+  padding: 18px 25px 18px 35px;
+
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  height: 100%;
+}
+.nav-button span {
+  font-size: 15px;
+}
+.nav-button > img {
+  width: 15px;
+  position: absolute;
+  left: 8px;
+}
+.nav-button:hover {
+  background-color: #1172c2;
+  cursor: pointer;
+}
+
+/******* header para *******/
+.header-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 48px;
+
+  background-color: #25252b;
+  color: #fff;
+}
+.header-para span {
+  color: #0267ba;
+}
+
+/******* header section *******/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c32;
+  width: 100vw;
+  height: 639px;
+  column-gap: 60px;
+}
+/******* right section *******/
+.right-side-box img {
+  width: 750px;
+  margin-right: -70px;
+}
+
+/******* left section *******/
+.left-side-box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: -150px;
+}
+
+.left-side-box > span {
+  color: #fff;
+  font-size: 50px;
+}
+.left-side-box > span:nth-child(1) {
+  font-weight: 200;
+  margin-bottom: -20px;
+}
+.para1 {
+  color: rgb(128, 128, 128);
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.left-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.left-button > button {
+  background-color: #0267ba;
+  padding: 12px 30px;
+
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+.left-button > button:hover {
+  background-color: #035aa2;
+  cursor: pointer;
+}
+.button-para {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.dropdown-img {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #0267ba;
+  margin-left: 2px;
+  width: 50px;
+  height: 68px;
+  padding: 25px 0;
+}
+.dropdown-img:hover {
+  background-color: #035aa2;
+  cursor: pointer;
+}
+.dropdown-img img[src="./assets/chevronDown.svg"] {
+  width: 15px;
+}
+
+.dropdown-text {
+  font-size: 13px;
+  background-color: #25252b;
+  padding: 7px 17px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-text > span {
+  color: #0267ba;
+}
+.dropdown-text > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.dropdown-para1 {
+  font-size: 12px;
+  color: #828181;
+  margin: 10px 0 -5px 0;
+}
+.dropdown-para2 {
+  font-size: 11px;
+  color: #0267ba;
+}
+.dropdown-para2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/******* main section *******/
+
+/******* 
+header-next-bottom section *******/
+
+.header-next-bottom-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  max-width: 100vw;
+  height: fit-content;
+  padding: 0 10vw;
+  background-color: #fff;
+}
+.extension-box {
+  text-align: center;
+  padding: 20px 40px;
+}
+.para-bulb,
+.para-debugger,
+.para-connection,
+.para-grid {
+  font-size: 18px;
+}
+
+.extension-box:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+.box1 {
+  height: 9vh;
+  margin-bottom: 10px;
+  background-image: url(./assets/bulb.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box1:hover {
+  background-image: url(./assets/bulb-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.box2 {
+  margin-bottom: 10px;
+  height: 9vh;
+  background-image: url(./assets/debugger.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box2:hover {
+  background-image: url(./assets/debugger-green.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.box3 {
+  margin-bottom: 10px;
+  height: 9vh;
+  background-image: url(./assets/connection.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box3:hover {
+  background-image: url(./assets/connection-red.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.box4 {
+  height: 9vh;
+  margin-bottom: 10px;
+  background-image: url(./assets/grid1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box4:hover {
+  background-image: url(./assets/grid-black-img.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/******* social section *******/
+
+.social-container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 50vh;
+  padding: 0 10vw;
+}
+.social-proof-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.social-proof-box > img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social-text-box {
+  position: relative;
+  width: 18vw;
+}
+.name {
+  font-weight: 600;
+}
+.name:hover {
+  color: #035aa2;
+  cursor: pointer;
+}
+.code {
+  color: #1172c2;
+}
+.code:hover {
+  text-decoration: underline;
+}
+.at-the-rate {
+  color: #828181;
+  font-size: 12px;
+}
+
+.name::before {
+  content: url(./assets/twitter.svg);
+  display: inline-block;
+  width: 18px;
+  fill: #0267ba;
+  position: absolute;
+  right: 10px;
+}
+
+.social-text-box > p:nth-child(3) {
+  font-size: 17px;
+  color: #707070;
+  width: 18vw;
+}
+p.pavithra.para {
+  width: 18vw;
+  font-size: 17px;
+}
+/****** Testimonial section *****/
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-box {
+  width: 100vw;
+  height: 50vh;
+}
+.intelliSense-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 130px;
+  background-color: #fff;
+  padding: 0 11vw 0 11vw;
+}
+.intelliSense-home p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.intelliSense-home p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+  width: 47vw;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.debug-home {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 130px;
+  background-color: #f5f5f5;
+  padding: 0 11vw 0 11vw;
+}
+.debug-home p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.debug-home p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+  width: 47vw;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.git-commands-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 130px;
+  background-color: #fff;
+  padding: 0 11vw 0 11vw;
+}
+.git-commands-home p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.git-commands-home p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+  width: 47vw;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.hundreds-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 130px;
+  background-color: #f5f5f5;
+  padding: 0 11vw 0 11vw;
+}
+.hundreds-home img {
+  width: 100%;
+}
+.hundreds-home img:hover {
+  width: 105%;
+  transition: all ease-in-out 0.4s;
+}
+.hundreds-home p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.hundreds-home p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+  width: 47vw;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.azure-home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 130px;
+  background-color: #fff;
+  padding: 0 11vw 0 11vw;
+}
+.azure-home p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.azure-home p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+  width: 47vw;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+/******* vs-code-for section *******/
+.vs-code-for-srction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+  background-color: #f5f5f5;
+}
+.vs-code-for-srction > p:nth-child(1) {
+  font-size: 30px;
+  padding: 60px 0 40px 0;
+  font-weight: 200;
+}
+.vs-para2 {
+  padding-bottom: 50px;
+  color: #035aa2;
+}
+.vs-para2:hover {
+  text-decoration: underline;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 70px;
+  row-gap: 25px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+li {
+  font-size: 17px;
+  font-weight: 400;
+}
+.vs-btn {
+  padding-bottom: 60px;
+}
+.vs-code-for-srction button {
+  background-color: #1172c2;
+  border: none;
+  padding: 20px 45px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.vs-code-for-srction button:hover {
+  background-color: #03579d;
+}
+.language-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/******* windows version section *******/
+.vs-version-section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  column-gap: 70px;
+
+  width: 100vw;
+  height: 60vh;
+  background-color: #fff;
+}
+
+.windows-section-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.windows-section-box > img {
+  width: 100px;
+}
+
+.user-installer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.user-installer > p {
+  width: 10vw;
+  text-align: center;
+}
+.system-installer {
+  display: grid;
+  grid-template-columns: repeat(3, 0.6fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #fff;
+}
+.system-installer > span {
+  margin: 0 3px 4px 0;
+  font-size: 12px;
+  padding: 0 2px 0 2px;
+}
+.system-installer > span:nth-child(1) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(2) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(3) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(4) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(5) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(6) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(7) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(8) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.system-installer > span:nth-child(9) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+
+button.window-button {
+  background-color: #0267ba;
+  border: none;
+  color: #fff;
+  padding: 16px 70px;
+}
+button.window-button:hover {
+  cursor: pointer;
+  background-color: #03579d;
+}
+.window-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.download-window {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+.download-window > span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.window-button p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/***** linux section *****/
+div.windows-section-box.linux-section-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.linux-button-box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+.linux-button-box > button.window-button {
+  padding: 16px 0;
+  width: 187px;
+}
+
+.linux-user-installer div.linux-system-installer {
+  display: grid;
+  grid-template-columns: repeat(4, 0.7fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.linux-system-installer > span {
+  margin: 0 3px -1px 0;
+  font-size: 12px;
+  padding: 0 2px 0 2px;
+  color: #fff;
+}
+.linux-system-installer > span:nth-child(1) {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.linux-system-installer > span:nth-child(2) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(3) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(4) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(5) {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.linux-system-installer > span:nth-child(6) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(7) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(8) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(9) {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.linux-system-installer > span:nth-child(10) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(11) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(12) {
+  background-color: #0267ba;
+  border-radius: 2px;
+}
+.linux-system-installer > span:nth-child(13) {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+.linux-system-installer > span:nth-child(14) {
+  background-color: #0267ba;
+  border-radius: 2px;
+  grid-column: 2/4;
+  font-size: 11px;
+  padding-right: 3px;
+}
+
+/**** apple section box *****/
+.apple-system-installer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.apple-system-installer > span:nth-child(1) {
+  font-size: 15px;
+  font-weight: 500;
+}
+.apple-system-installer > span:nth-child(2) {
+  background-color: #0267ba;
+  color: #fff;
+  padding: 0 2px 0 2px;
+  border-radius: 2px;
+}
+.apple-system-installer > span:nth-child(3) {
+  background-color: #0267ba;
+  color: #fff;
+  padding: 0 2px 0 2px;
+  border-radius: 2px;
+}
+.apple-system-installer > span:nth-child(4) {
+  background-color: #0267ba;
+  color: #fff;
+  padding: 0 2px 0 2px;
+  border-radius: 2px;
+}
+
+button.apple-button {
+  padding: 16px 80px;
+}
+
+/******* feature section ******/
+.feature-section-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  width: 100vw;
+  height: 55vh;
+  background-color: #f5f5f5;
+  padding: 0 9vw;
+  text-align: center;
+}
+.feature-section-box span {
+  color: #03579d;
+}
+.feature-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+
+  width: 100%;
+}
+.feature-content-para {
+  text-align: center;
+}
+.first-para {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  width: 20vw;
+}
+.second-para {
+  font-size: 17px;
+  color: #585858;
+}
+.license {
+  max-width: 47vw;
+}
+.license p {
+  font-size: 13px;
+  line-height: 40px;
+  color: #707070;
+}
+.license p:nth-child(1) {
+  color: #585858;
+  font-weight: 500;
+}
+
+/***** footer *****/
+footer {
+  background-color: #333333;
+  max-width: 100vw;
+  height: 15vh;
+}
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.footer-text > span {
+  font-size: 14px;
+  margin-right: 14px;
+  vertical-align: middle;
+}
+.footer-text > button {
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer-text > button > span {
+  font-size: 10px;
+  margin-left: 1px;
+  font-weight: 600;
+}
+.follow-code:hover {
+  color: #b957ff;
+  cursor: pointer;
+}
+button.button-nmb {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 6px;
+}
+.footer-text-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer-text-2 > span {
+  font-size: 12px;
+}
+.footer-text-2 > span:hover {
+  color: #b957ff;
+  cursor: pointer;
+}
+.microsoft-logo {
+  display: flex;
+  flex-direction: column;
+}
+.micro-logo {
+  width: 98px;
+}
+.microsoft-logo span {
+  font-size: 12px;
+}
